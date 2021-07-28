@@ -1,0 +1,89 @@
+<html>
+<head>
+
+<title>Hand Gesture</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+  
+<center>
+
+<h1 class="btn btn-warning hand"> HAND GESTURE
+
+<br>
+
+<span>&#128076;</span>
+
+<span>&#9996;</span>
+
+<span>&#129311;</span>
+
+</h1>
+
+<br>
+
+<br>
+
+<b style="color: yellow">Are You Super!?</b>
+
+<br>
+
+<b style="color: rgb(83, 180, 135)">Did You Win!?</b>
+
+<br>
+
+<b style="color: rgb(67, 142, 204)">Are You Rocking!?</b>
+
+<br>
+
+</p>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>WebCam - </label>
+<div id="webcam"></div>
+<br><br>
+<button class="btn btn-success" onclick="takeSnapshot()"> Snapshot </button>
+</div>
+      
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Hand 1 -</label>
+<p class="hand-name" id="gesture-1"></p>
+<p class="hand" id="hand_1"></p>
+
+<label>Hand 2 -</label>
+<p class="hand-name" id="gesture-2"></p>
+<p class="hand" id="hand_2"></p>
+</div>
+
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Take Snap - </label>
+<div id="result"></div>
+<br>
+<button onclick="check()" class="btn btn-info">Take Hand Gesture</button>
+</div>
+
+</center>
+
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
+ 
